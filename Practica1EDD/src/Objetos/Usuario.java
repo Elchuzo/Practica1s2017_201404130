@@ -4,9 +4,13 @@ package Objetos;
 public class Usuario {
     String nombre;
     int puntuacion;
-    public void Usuario()
+    public Usuario()
     {
         
     }
-    
+    public Usuario(String nombre)
+    {
+        this.nombre = nombre;
+    }
+
 }

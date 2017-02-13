@@ -2,16 +2,16 @@ package practica1edd.Estructuras;
 
 import Objetos.Ficha;
 
-public class Nodo {
+public class NodoFicha {
     Ficha dato;
-    Nodo enlace;
+    NodoFicha enlace;
 
-    public Nodo(Ficha ficha)
+    public NodoFicha(Ficha ficha)
     {
         dato=ficha;
         enlace=null;
     }
-    public Nodo(Ficha ficha,Nodo n)
+    public NodoFicha(Ficha ficha,NodoFicha n)
     {
         dato=ficha;
         enlace=n;
@@ -20,11 +20,11 @@ public class Nodo {
     {
     return dato;
     }
-    public Nodo getEnlace()
+    public NodoFicha getEnlace()
     {
     return enlace;
     }
-    public void setEnlace(Nodo enlace)
+    public void setEnlace(NodoFicha enlace)
     {
     this.enlace = enlace;
     }

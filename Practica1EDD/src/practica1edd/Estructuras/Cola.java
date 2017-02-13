@@ -4,7 +4,8 @@ import Objetos.Ficha;
 
 public class Cola {
  
-	Nodo inicio,fin;
+	NodoFicha inicio;
+        NodoFicha fin;
 	public void Cola()
 	{
 		inicio=fin=null;
@@ -15,7 +16,7 @@ public class Cola {
 	}	
 	public void insertar(Ficha f)
 	{
-		Nodo nuevo = new Nodo(f);
+		NodoFicha nuevo = new NodoFicha(f);
 		if(vacia())
 		{
 			inicio = nuevo;
